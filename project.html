@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Amirlan Kuan, SE-2528 — interactive jQuery assignment 6">
+<title>Mini project · jQuery Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+<script defer src="assets/app.js">
+</script>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">
+<span class="brand-mark">jQ</span> THE INTERACTION LAB</a>
+<span class="course">ASSIGNMENT / 06</span>
+</header>
+<div class="layout">
+<aside>
+<div class="eyebrow">EXPERIMENTS</div>
+<nav aria-label="Assignment parts">
+<a href="index.html" >
+<span>01</span>Getting started</a>
+<a href="effects.html" >
+<span>02</span>Effects</a>
+<a href="dom.html" >
+<span>03</span>DOM & forms</a>
+<a href="animations.html" >
+<span>04</span>Animations</a>
+<a href="project.html" aria-current="page">
+<span>05</span>Mini project</a>
+</nav>
+<div class="student">
+<strong>Amirlan Kuan</strong>
+<span>SE-2528</span>
+<small>Web Technologies · jQuery</small>
+</div>
+</aside>
+<main>
+<div class="eyebrow">PART 05 / JQUERY EXPLORATIONS</div>
+<h1>Mini project<span>.</span>
+</h1>
+<p class="intro">Bring the techniques together in a small, working interface.</p>
+<div class="cards">
+<section class="card">
+<div class="eyebrow">TASK 11</div>
+<h2>The jQuery field guide.</h2>
+<p class="description">Mini project: an accessible accordion menu. Open a topic to explore. Only one section stays open at a time.</p>
+<div class="accordion">
+<div class="accordion-item">
+<h3>
+<button class="accordion-trigger" id="trigger-0" aria-expanded="false" aria-controls="panel-0">What is a selector?<span aria-hidden="true">+</span>
+</button>
+</h3>
+<div class="accordion-panel" id="panel-0" role="region" aria-labelledby="trigger-0" hidden>
+<p>A selector identifies DOM elements. Use #id for a unique element, .class for a group, or a tag name such as p.</p>
+</div>
+</div>
+<div class="accordion-item">
+<h3>
+<button class="accordion-trigger" id="trigger-1" aria-expanded="false" aria-controls="panel-1">How do effects work?<span aria-hidden="true">+</span>
+</button>
+</h3>
+<div class="accordion-panel" id="panel-1" role="region" aria-labelledby="trigger-1" hidden>
+<p>Effects gradually change visibility. fadeIn and fadeOut animate opacity; slideDown and slideUp animate the visible height.</p>
+</div>
+</div>
+<div class="accordion-item">
+<h3>
+<button class="accordion-trigger" id="trigger-2" aria-expanded="false" aria-controls="panel-2">What is the animation queue?<span aria-hidden="true">+</span>
+</button>
+</h3>
+<div class="accordion-panel" id="panel-2" role="region" aria-labelledby="trigger-2" hidden>
+<p>Chained animate calls run in order on each element. This queue lets you build a sequence of movements.</p>
+</div>
+</div>
+<div class="accordion-item">
+<h3>
+<button class="accordion-trigger" id="trigger-3" aria-expanded="false" aria-controls="panel-3">How is this accordion built?<span aria-hidden="true">+</span>
+</button>
+</h3>
+<div class="accordion-panel" id="panel-3" role="region" aria-labelledby="trigger-3" hidden>
+<p>Each button handles a click event. The current panel uses slideToggle; the other panels use slideUp. aria-expanded stays synchronized with the visible state.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer>Built with HTML, CSS & jQuery <span>Amirlan Kuan / SE-2528</span>
+</footer>
+</main>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Amirlan Kuan, SE-2528 — interactive jQuery assignment 6">
+<title>Animations · jQuery Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+<script defer src="assets/app.js">
+</script>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">
+<span class="brand-mark">jQ</span> THE INTERACTION LAB</a>
+<span class="course">ASSIGNMENT / 06</span>
+</header>
+<div class="layout">
+<aside>
+<div class="eyebrow">EXPERIMENTS</div>
+<nav aria-label="Assignment parts">
+<a href="index.html" >
+<span>01</span>Getting started</a>
+<a href="effects.html" >
+<span>02</span>Effects</a>
+<a href="dom.html" >
+<span>03</span>DOM & forms</a>
+<a href="animations.html" aria-current="page">
+<span>04</span>Animations</a>
+<a href="project.html" >
+<span>05</span>Mini project</a>
+</nav>
+<div class="student">
+<strong>Amirlan Kuan</strong>
+<span>SE-2528</span>
+<small>Web Technologies · jQuery</small>
+</div>
+</aside>
+<main>
+<div class="eyebrow">PART 04 / JQUERY EXPLORATIONS</div>
+<h1>Animations<span>.</span>
+</h1>
+<p class="intro">Give elements a sense of movement, rhythm, and direction.</p>
+<div class="cards">
+<section class="card">
+<div class="eyebrow">TASK 8</div>
+<h2>A bigger step.</h2>
+<p class="description">Increase a square’s size and move it across the stage.</p>
+<div class="track">
+<div id="basic-box" class="box">08</div>
+</div>
+<div class="controls">
+<button data-action="basic">Animate</button>
+<button data-action="basic-reset">Reset</button>
+</div>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 9</div>
+<h2>One move at a time.</h2>
+<p class="description">Move right → move down → shrink → return to the original state.</p>
+<div class="track tall">
+<div id="sequence-box" class="box">09</div>
+</div>
+<div class="controls">
+<button data-action="sequence">Play sequence</button>
+<button data-action="sequence-reset">Reset</button>
+</div>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 10</div>
+<h2>All together now.</h2>
+<p class="description">Change opacity, size, and position in one .animate() call.</p>
+<div class="track">
+<div id="combined-box" class="box">10</div>
+</div>
+<div class="controls">
+<button data-action="combined">Animate together</button>
+<button data-action="combined-reset">Reset</button>
+</div>
+<pre>$("#combined-box").animate({
+  left: distance, top: 24,
+  width: 112, height: 112, opacity: 0.4
+}, 900);</pre>
+</section>
+</div>
+<footer>Built with HTML, CSS & jQuery <span>Amirlan Kuan / SE-2528</span>
+</footer>
+</main>
+</div>
+</body>
+</html>

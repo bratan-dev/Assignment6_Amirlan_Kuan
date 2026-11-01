@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Amirlan Kuan, SE-2528 — interactive jQuery assignment 6">
+<title>Getting started · jQuery Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+<script defer src="assets/app.js">
+</script>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">
+<span class="brand-mark">jQ</span> THE INTERACTION LAB</a>
+<span class="course">ASSIGNMENT / 06</span>
+</header>
+<div class="layout">
+<aside>
+<div class="eyebrow">EXPERIMENTS</div>
+<nav aria-label="Assignment parts">
+<a href="index.html" aria-current="page">
+<span>01</span>Getting started</a>
+<a href="effects.html" >
+<span>02</span>Effects</a>
+<a href="dom.html" >
+<span>03</span>DOM & forms</a>
+<a href="animations.html" >
+<span>04</span>Animations</a>
+<a href="project.html" >
+<span>05</span>Mini project</a>
+</nav>
+<div class="student">
+<strong>Amirlan Kuan</strong>
+<span>SE-2528</span>
+<small>Web Technologies · jQuery</small>
+</div>
+</aside>
+<main>
+<div class="eyebrow">PART 01 / JQUERY EXPLORATIONS</div>
+<h1>Getting started<span>.</span>
+</h1>
+<p class="intro">Start with the essentials. Turn static elements into something interactive.</p>
+<div class="cards">
+<section class="card">
+<div class="eyebrow">TASK 0</div>
+<h2>Hello, jQuery.</h2>
+<p class="description">The library is loaded from a CDN. Open the browser console to see the ready message.</p>
+<div class="status" id="ready-status">Loading jQuery…</div>
+<pre>$(document).ready(function () {
+  console.log("jQuery is ready!");
+});</pre>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 1</div>
+<h2>Select. Change. Style.</h2>
+<p class="description">Use an ID, a class, and a tag selector to transform these elements.</p>
+<div class="demo">
+<h3 id="selector-title">A heading selected by ID</h3>
+<p class="selector-copy">A paragraph selected by class</p>
+<div id="tag-demo">
+<span>A span selected by tag</span>
+</div>
+</div>
+<div class="controls">
+<button data-action="selectors">Apply selectors</button>
+<button data-action="selectors-reset">Reset</button>
+</div>
+<pre>$("#selector-title").text("Selected by ID");
+$(".selector-copy").html("Text with &lt;strong&gt;HTML&lt;/strong&gt;");
+$("#tag-demo span").css("color", "#267358");</pre>
+</section>
+</div>
+<footer>Built with HTML, CSS & jQuery <span>Amirlan Kuan / SE-2528</span>
+</footer>
+</main>
+</div>
+</body>
+</html>

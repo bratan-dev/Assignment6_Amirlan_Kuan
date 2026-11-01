@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Amirlan Kuan, SE-2528 — interactive jQuery assignment 6">
+<title>DOM & forms · jQuery Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+<script defer src="assets/app.js">
+</script>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">
+<span class="brand-mark">jQ</span> THE INTERACTION LAB</a>
+<span class="course">ASSIGNMENT / 06</span>
+</header>
+<div class="layout">
+<aside>
+<div class="eyebrow">EXPERIMENTS</div>
+<nav aria-label="Assignment parts">
+<a href="index.html" >
+<span>01</span>Getting started</a>
+<a href="effects.html" >
+<span>02</span>Effects</a>
+<a href="dom.html" aria-current="page">
+<span>03</span>DOM & forms</a>
+<a href="animations.html" >
+<span>04</span>Animations</a>
+<a href="project.html" >
+<span>05</span>Mini project</a>
+</nav>
+<div class="student">
+<strong>Amirlan Kuan</strong>
+<span>SE-2528</span>
+<small>Web Technologies · jQuery</small>
+</div>
+</aside>
+<main>
+<div class="eyebrow">PART 03 / JQUERY EXPLORATIONS</div>
+<h1>DOM & forms<span>.</span>
+</h1>
+<p class="intro">Shape the document, update attributes, and respond to every keystroke.</p>
+<div class="cards">
+<section class="card">
+<div class="eyebrow">TASK 5</div>
+<h2>Build a reading list.</h2>
+<p class="description">Append to the end, prepend to the beginning, or remove the last item.</p>
+<ul id="item-list">
+<li>Learn selectors</li>
+<li>Try an effect</li>
+</ul>
+<div class="controls">
+<button data-action="append">Add item (end)</button>
+<button data-action="prepend">Add item (start)</button>
+<button data-action="remove">Remove last item</button>
+</div>
+<p id="list-status" role="status" class="hint">2 items in the list</p>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 6</div>
+<h2>Change the destination.</h2>
+<p class="description">Update image src and link href attributes dynamically.</p>
+<img id="attribute-image" class="landscape" src="assets/day.svg" alt="Illustrated mountain landscape in daylight">
+<div class="controls">
+<button data-action="image-src">Switch day / night</button>
+<button data-action="link-href">Change link destination</button>
+</div>
+<p>
+<a id="dynamic-link" href="https://jquery.com/" target="_blank" rel="noopener">Visit jQuery</a>
+</p>
+<p class="hint" id="link-status">Current href: https://jquery.com/</p>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 7</div>
+<h2>A live introduction.</h2>
+<p class="description">Type into the form. Values are read with .val() and safely rendered with .text().</p>
+<form id="profile-form">
+<label for="name">Name</label>
+<input id="name" name="name" autocomplete="name" placeholder="Your name">
+<label for="email">Email</label>
+<input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com">
+</form>
+<div class="demo live" aria-live="polite">
+<p>Name: <strong id="live-name">—</strong>
+</p>
+<p>Email: <strong id="live-email">—</strong>
+</p>
+</div>
+</section>
+</div>
+<footer>Built with HTML, CSS & jQuery <span>Amirlan Kuan / SE-2528</span>
+</footer>
+</main>
+</div>
+</body>
+</html>

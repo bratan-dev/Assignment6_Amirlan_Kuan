@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Amirlan Kuan, SE-2528 — interactive jQuery assignment 6">
+<title>Effects · jQuery Lab</title>
+<link rel="stylesheet" href="assets/style.css">
+<script defer src="https://code.jquery.com/jquery-3.7.1.min.js">
+</script>
+<script defer src="assets/app.js">
+</script>
+</head>
+<body>
+<header>
+<a class="brand" href="index.html">
+<span class="brand-mark">jQ</span> THE INTERACTION LAB</a>
+<span class="course">ASSIGNMENT / 06</span>
+</header>
+<div class="layout">
+<aside>
+<div class="eyebrow">EXPERIMENTS</div>
+<nav aria-label="Assignment parts">
+<a href="index.html" >
+<span>01</span>Getting started</a>
+<a href="effects.html" aria-current="page">
+<span>02</span>Effects</a>
+<a href="dom.html" >
+<span>03</span>DOM & forms</a>
+<a href="animations.html" >
+<span>04</span>Animations</a>
+<a href="project.html" >
+<span>05</span>Mini project</a>
+</nav>
+<div class="student">
+<strong>Amirlan Kuan</strong>
+<span>SE-2528</span>
+<small>Web Technologies · jQuery</small>
+</div>
+</aside>
+<main>
+<div class="eyebrow">PART 02 / JQUERY EXPLORATIONS</div>
+<h1>Effects<span>.</span>
+</h1>
+<p class="intro">Explore how visibility, opacity, and motion change the feel of a page.</p>
+<div class="cards">
+<section class="card">
+<div class="eyebrow">TASK 2</div>
+<h2>Now you see it.</h2>
+<p class="description">Hide, show, or toggle the paragraph.</p>
+<div class="demo">
+<p id="visibility-text">Small actions can make a big difference. This paragraph is controlled by jQuery.</p>
+</div>
+<div class="controls">
+<button data-action="hide">Hide</button>
+<button data-action="show">Show</button>
+<button data-action="toggle">Toggle</button>
+</div>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 3</div>
+<h2>A softer entrance.</h2>
+<p class="description">Fade an original landscape illustration in and out.</p>
+<div class="image-stage">
+<img id="fade-image" src="assets/day.svg" alt="Illustrated mountain landscape in daylight">
+</div>
+<div class="controls">
+<button data-action="fadeIn">Fade in</button>
+<button data-action="fadeOut">Fade out</button>
+<button data-action="fadeToggle">Fade toggle</button>
+</div>
+</section>
+<section class="card">
+<div class="eyebrow">TASK 4</div>
+<h2>Make room for more.</h2>
+<p class="description">Slide the panel closed, open, or toggle its state.</p>
+<div id="slide-panel" class="demo">
+<h3>A little about jQuery</h3>
+<p>jQuery makes DOM selection, events, effects, and animation easier with a concise API.</p>
+</div>
+<div class="controls">
+<button data-action="slideUp">Slide up</button>
+<button data-action="slideDown">Slide down</button>
+<button data-action="slideToggle">Slide toggle</button>
+</div>
+</section>
+</div>
+<footer>Built with HTML, CSS & jQuery <span>Amirlan Kuan / SE-2528</span>
+</footer>
+</main>
+</div>
+</body>
+</html>
